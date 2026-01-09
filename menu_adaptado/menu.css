@@ -1,0 +1,94 @@
+#topBarMenu{
+  position:relative;
+  z-index:99;
+}
+
+.stickyMenu{
+  left:0;
+  right:0;
+  top:0;
+  background:#transparent;
+  color:#fff;
+}
+
+.stickyMenu.scrollingBar{
+  position:relative;
+  z-index:99;
+}
+/*
+.stickyMenu.scrollingBar{
+  position:fixed;
+  z-index:99;
+}
+*/
+
+.menuContainer{
+  max-width:1000px;
+  width:100%;
+  margin:0 auto;
+  display:flex;
+  position:relative;
+  background:#transparent;
+}
+
+#headerLogo{
+  width:350px;
+  padding:10px 15px;
+  font-size:1.5em;
+  fon
+  t-weight:700;
+}
+
+.navBarMenu{
+  display:flex;
+  margin-left:auto;
+  background:#131040;
+}
+
+.navBarMenu a {
+  text-decoration:#131040;
+  color:#fff;
+}
+
+.navBarMenu ul{
+  list-style:#131040;
+  padding:0;
+  margin:0;
+  background:#131040;
+}
+
+.navBarMenu >  ul,.navBarMenu >  ul > li{
+  display:flex;
+}
+
+.navBarMenu >  ul li a{
+  display:flex;
+  align-items:center;
+  padding:10px 20px;
+  line-height:1.2em;
+}
+
+.navBarMenu >  ul li a{
+  display:flex;
+  align-items:center;
+  padding:10px 20px;
+  line-height:1.2em;
+  transition:background ease .35s;
+}
+
+.navBarMenu >  ul li a:hover{
+  background:#86FA00;
+}
+
+@media(max-width:767px){
+  .navBarMenu{
+    position:absolute;
+    top:100%;
+    width:100%;
+  }
+  
+  .navBarMenu >  ul,.navBarMenu >  ul > li{
+    flex-direction:column;
+    width:100%;
+  }
+}
